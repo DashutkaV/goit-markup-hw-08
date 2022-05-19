@@ -1,13 +1,26 @@
 .team {
-    display: flex;
-    margin-left: -30px;
-    flex-wrap: wrap;
+    margin-bottom: -30px;
+    @media screen and (min-width: 768px) {
+        display: flex;
+        margin-left: -15px;
+        flex-wrap: wrap;
+        flex-basis: calc(100% / 2 - 15px); 
+    }
     &__item {
-        flex-basis: calc(100% / 4 - 30px);
-        margin-left: 30px;
+        // flex-basis: calc(100% / 1 - 15px);
+        // margin-left: 30px;
+        margin-bottom: 30px;
         background: #FFFFFF;
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
         border-radius: 0px 0px 4px 4px;
+        @media screen and (min-width: 768px) {
+            flex-basis: calc(100% /2 - 15px);
+            margin-left: 15px;
+        }
+        @media screen and (min-width: 1200px) {
+            flex-basis: calc(100% /4 - 30px);
+            margin-left: 30px;
+        }
     }
     &__description {
         padding: 30px 0 30px;
@@ -21,6 +34,7 @@
             // letter-spacing: 0.03em;
         color: var(--header-color);
         margin-bottom: 10px;
+
     }
     &__text {
         @include font (null, 16px, 1.18, 0.03em);
