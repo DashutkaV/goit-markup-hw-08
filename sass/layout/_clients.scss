@@ -1,25 +1,38 @@
 .client {
     display: flex;
-    margin-left: -30px;
     flex-wrap: wrap;
-    &__item {
-        flex-basis: calc(100% / 6 - 30px);
-        margin-left: 30px;
-        & + & {
-            margin-left: 30px;
-        }
-    }  
+    justify-content: center;
+    margin-left: -15px;
+    
 }
 
-.client__link {
-    width: 170px;
+.client__item {
     height: 92px;
-    background-color: var(--main-title-color);
+    margin: 15px;
+    flex-basis: calc((100% - 60px) / 2);
+    
+    @media screen and (min-width: 768px) {
+        flex-basis: calc((100% - 90px) / 3);
+    }
+    
+    @media screen and (min-width: 1200px) {
+        flex-basis: calc((100% - 180px) / 6);
+    }
+}  
+
+
+.client__link {
     @extend %align-list;
     justify-content: center;
+
+    width: 170px;
+    height: 100%;
+
+    background-color: var(--main-title-color);
     border: 1px solid rgba(175, 177, 184, 1);
     border-radius: 4px;
     transition: border var(--cubic);
+
     &:hover, &:focus {
         border-color: var(--accent-color);
     }
@@ -28,6 +41,7 @@
 .client__icon {
     fill: #afb1b8;
     transition: fill var(--cubic);
+    
     .client__link:hover &, .client__link:focus & {
         fill: var(--accent-color);
     }
