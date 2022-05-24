@@ -2,7 +2,11 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-left: -15px;
+    margin-left: 0;
+
+    @media screen and (min-width: 1200px) {
+        flex-wrap: nowrap;
+    }
     
 }
 
@@ -25,7 +29,8 @@
     @extend %align-list;
     justify-content: center;
 
-    width: 170px;
+    width: 100%;
+    // width: 170px;
     height: 100%;
 
     background-color: var(--main-title-color);

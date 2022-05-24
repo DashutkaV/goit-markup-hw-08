@@ -1,19 +1,18 @@
 .container {
-    // width: 100%;
+    margin: 0 auto; 
     padding-left: 15px;
     padding-right: 15px;
     outline: 1px solid salmon;
 
     @media screen and (min-width: 480px) {
         min-width: 480px;
-        margin: 0 auto;        
     }
-    
+
     @media screen and (min-width: 768px) {
         min-width: 768px;
     }
 
     @media screen and (min-width: 1200px) {
-        min-width: 1200px;
+        max-width: 1200px;
     }
 }
