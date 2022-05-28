@@ -29,35 +29,135 @@
 </head>
 <body>
     <header class="header">
-        <div class="container">
-            <a class="logo header__logo" href="">Web<span class="logo__dark">Studio</span>
-            </a>
+        <div class="container header__container">
+            <a href="./index.html" class="logo header__logo link"
+            >Web<span class="logo__text logo__dark">Studio</span></a
+            >
             <nav class="navigation">
-                <ul class="menu-list">
+                <ul class="menu-list list navigation__list">
                     <li class="menu-list__item">
-                        <a class="menu-list__link" href="./index.html">Студия</a></li>
+                    <a
+                        href="./index.html"
+                        class="menu-list__link"
+                        >Студия</a
+                    >
+                    </li>
                     <li class="menu-list__item">
-                        <a class="menu-list__link menu-list__link--active" href="./portfolio.html">Портфолио</a></li>
+                        <a href="./portfolio.html" class="menu-list__link menu-list__link--active">Портфолио</a>
+                    </li>
                     <li class="menu-list__item">
-                        <a class="menu-list__link" href="">Контакты</a></li>
+                    <a href="" class="menu-list__link">Контакты</a>
+                    </li>
                 </ul>
             </nav>
-            <ul class="connect header__connect">
+            <ul class="connect navigation__connect list">
                 <li class="connect__item">
-                    <a class="connect__link" href="mailto:info@devstudio.com">
+                    <a href="mailto:info@devstudio.com" class="connect__link link">
                         <svg class="connect__icon" width="16" height="12">
                             <use href="./images/symbol-defs.svg#icon-envelope"></use>
                         </svg>
-                        info@devstudio.com</a>
+                        info@devstudio.com
+                    </a>
                 </li>
                 <li class="connect__item">
-                    <a class="connect__link" href="tel:+380961111111">
-                        <svg class="connect__icon" width="10" height="16">
-                            <use href="./images/symbol-defs.svg#icon-smartphone"></use>
-                        </svg>
-                        +38 096 111 11 11</a>
+                    <a
+                        href="tel:+380961111111"
+                        class="connect__link connect__link--active link"
+                    >
+                <svg class="connect__icon" width="10" height="16">
+                    <use href="./images/symbol-defs.svg#icon-smartphone"></use>
+                </svg>
+                +38 096 111 11 11
+                    </a>
                 </li>
             </ul>
+            <button type="button" class="menu-open-btn">
+                <svg class="menu-btn__icon" width="40" height="40">
+                    <use href="./images/symbol-defs.svg#icon-burger"></use>
+                </svg>
+            </button>
+            <div class="mob-menu">
+                <div class="container mob-menu__container">
+                    <button type="button" class="menu-close-btn">
+                        <svg class="menu-close__icon" width="40" height="40">
+                        <use href="./images/symbol-defs.svg#icon-close"></use>
+                        </svg>
+                    </button>
+                    <ul class="mob-nav">
+                        <li class="mob-nav__item">
+                            <a
+                                href="./index.html"
+                                class="mob-nav__link link"
+                                >Студия</a
+                            >
+                        </li>
+                        <li class="mob-nav__item">
+                            <a href="./portfolio.html" class="mob-nav__link mob-nav__link--active link">Портфолио</a>
+                        </li>
+                        <li class="mob-nav__item">
+                            <a href="" class="mob-nav__link link">Контакты</a>
+                        </li>
+                    </ul>
+                    <div class="contacts-wrap">
+                        <ul class="contacts-mob list">
+                            <li class="contacts-mob__item">
+                                <a
+                                href="mailto:info@devstudio.com"
+                                class="contacts-mob__link link"
+                                >
+                                info@devstudio.com
+                                </a>
+                            </li>
+                            <li class="contacts-mob__item">
+                                <a
+                                href="tel:+380961111111"
+                                class="contacts-mob__link contacts-mob__link--current link"
+                                >
+                                +38 096 111 11 11
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="social-media">
+                            <li class="social-media__item">
+                                <a
+                                class="social-media__link link"
+                                href="Instagram.com"
+                                target="_blank"
+                                rel="noreferrer noopener"
+                                >Instagram</a
+                                >
+                            </li>
+                            <li class="social-media__item">
+                                <a
+                                class="social-media__link link"
+                                href="Twitter.com"
+                                target="_blank"
+                                rel="noreferrer noopener"
+                                >Twitter</a
+                                >
+                            </li>
+                            <li class="social-media__item">
+                                <a
+                                class="social-media__link link"
+                                href="Facebook.com"
+                                target="_blank"
+                                rel="noreferrer noopener"
+                                >Facebook</a
+                                >
+                            </li>
+                            <li class="social-media__item">
+                                <a
+                                class="social-media__link link"
+                                href="Linkedln.com"
+                                target="_blank"
+                                rel="noreferrer noopener"
+                                >Linkedln</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
     <main>
