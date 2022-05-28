@@ -7,7 +7,9 @@
     @extend %align-list;
     justify-content: center;
     transition: opacity 250ms, visibility 250ms;
+    // opacity: 1;
 }
+
 
 .backdrop.is-hidden .modal {
     transform: scale(0.5) rotate(360deg);
