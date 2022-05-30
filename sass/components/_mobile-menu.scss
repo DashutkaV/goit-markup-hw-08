@@ -1,14 +1,11 @@
 .mob-menu__container {
-
     position: absolute;
     
     @media screen and (max-width: 767px) {
         padding: 48px 40px;
         position: relative;
-        height: 100%;
-    
-        overflow-y: auto;
-    
+        height: 100%;    
+        overflow-y: auto;    
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -21,11 +18,9 @@
         top: 0;
         left: 0;
         z-index: 1;
-        position: fixed;
-    
+        position: fixed;    
         width: 100vw;
-        height: 100vh;
-    
+        height: 100vh;    
         background-color: #ffffff;
         transform: translateX(0px);
         transition: transform var(--cubic);
@@ -34,19 +29,16 @@
             transform: translateX(-350px);
         }
     }
+
     @media screen and (min-width: 768px) {
         display: none;
     }
 }
 
 .menu-open-btn {
-    // cursor: pointer;
-
     display: block;
-
     margin-left: auto;
     padding: 0;
-
     border: none;
     background-color: transparent;
     fill: #212121;
@@ -56,6 +48,7 @@
     &:focus {
         fill: var(--accent-color);
     }
+
     @media screen and (min-width: 768px) {
         display: none;
     }
@@ -63,17 +56,12 @@
 
 .menu-close-btn {
     display: block;
-
     position: absolute;
     top: 10px;
     right: 15px;
-
-    cursor: pointer;
-
     margin-left: auto;
     margin-bottom: 8px;
     padding: 0;
-
     border: none;
     background-color: transparent;
     fill: #212121;

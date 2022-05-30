@@ -48,7 +48,7 @@ body {
   margin: -1px;
 }
 
-.soc-list__link, .client__link, .socials__link, .work__meta, .features__content, .modal-agree span, .modal-agree, .backdrop {
+.soc-list__link, .client__link, .socials__link, .work__meta, .features__content, .backdrop {
   display: flex;
   align-items: center;
 }
@@ -173,13 +173,29 @@ body {
 .modal {
   position: absolute;
   padding: 40px;
-  width: 528px;
-  height: 581px;
   background-color: var(--main-title-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transform: scale(1) rotate(0deg);
   transition: transform 250ms;
+}
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .modal {
+    max-width: 300px;
+    height: 500px;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .modal {
+    width: 450px;
+    height: 609px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
 }
 
 .modal-close-btn {
@@ -837,6 +853,7 @@ body {
 
 .team__img {
   max-width: 100%;
+  height: auto;
 }
 
 .team__description {

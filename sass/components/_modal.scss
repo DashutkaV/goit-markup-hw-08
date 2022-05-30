@@ -18,13 +18,26 @@
 .modal {
     position: absolute;
     padding: 40px;
-    width: 528px;
-    height: 581px;
     background-color: var(--main-title-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     transform: scale(1) rotate(0deg);
     transition:  transform 250ms;
+
+    @media screen and (min-width:320px) and (max-width: 480px){
+        max-width: 300px;
+        height: 500px;
+    }
+
+    @media screen and (min-width:480px) and (max-width: 767px) {
+        width: 450px;
+        height: 609px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 528px;
+        height: 581px;
+    }
 }
 
 .modal-close-btn {
@@ -36,7 +49,7 @@
     right: 8px;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
-    cursor: pointer;
+    // cursor: pointer;
 }
 
 .is-hidden {
@@ -141,7 +154,7 @@
 }
 
 .modal-agree {
-    @extend %align-list;
+    // @extend %align-list;
     justify-content: center;
     font-size: 14px;
     line-height: 1.71;
@@ -159,7 +172,7 @@
     border: 2px solid #212121;
     border-radius: 2px;
     margin-right: 5px;
-    @extend %align-list;
+    // @extend %align-list;
     justify-content: center;
 }
 

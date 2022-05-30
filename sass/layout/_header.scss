@@ -17,9 +17,7 @@
 
 .mob-nav__link {
     cursor: pointer;
-
     display: block;
-
     font-weight: 500;
     font-size: 40px;
     line-height: 1.18;
@@ -65,7 +63,6 @@
 
 .social-media__link {
     margin-right: 10px;
-
     cursor: pointer;
     font-weight: 500;
     font-size: 18px;
@@ -87,6 +84,7 @@
 }
 
 .menu-list {
+
     @media screen and (min-width: 768px) {
         list-style: none;
         display: flex;
@@ -95,6 +93,7 @@
 }
 
 .navigation__menu-list {
+
     @media screen and (min-width: 768px) {
         margin-left: 88px;
     }
@@ -104,6 +103,7 @@
 }
 
 .menu-list__item:not(:last-child) {
+
     @media screen and (min-width: 768px) {
         margin-right: 50px;
     }
@@ -115,11 +115,9 @@
         text-decoration: none;
         display: block;
         cursor: pointer;
-
         padding-bottom: 32px;
         padding-top: 32px;
         font-weight: 500;
-
         font-size: 14px;
         line-height: 1.14;
         letter-spacing: 0.02em;
@@ -131,6 +129,7 @@
         &:focus {
             color: var(--accent-color);
         }
+
         &--active {
             color: var(--accent-color);
             position: relative;
@@ -150,6 +149,7 @@
 }
 
 .navigation__connect {
+
     @media screen and (min-width: 768px) {
         margin-left: auto;
     }
@@ -160,11 +160,13 @@
     @media screen and (max-width: 767px) {
         display: none;
     }
+
     @media screen and (min-width: 768px) {
         list-style: none;
         display: flex;
         flex-direction: column;
     }
+
     @media screen and (min-width: 1200px) {
         flex-direction: row;
     }
@@ -189,18 +191,15 @@
 .connect__link {
 
     @media screen and (min-width: 768px) {
-        text-decoration: none;
-    
+        text-decoration: none;    
         display: inline-flex;
         align-items: center;
-        justify-content: center;
-    
+        justify-content: center;    
         font-weight: 500;
         font-size: 12px;
         line-height: 1.17;
         letter-spacing: 0.02em;
-        color: var(--main-text-color);
-    
+        color: var(--main-text-color);    
         transition: color var(--cubic);
     
         &:hover,
@@ -211,7 +210,6 @@
         @media screen and (min-width: 1200px) {
             padding-bottom: 32px;
             padding-top: 32px;
-
             font-size: 14px;
             line-height: 1.14;
         }
@@ -220,14 +218,11 @@
 
 .contacts-mob__link {
     text-decoration: none;
-
     font-weight: 500;
     font-size: 24px;
     line-height: 1.17;
     letter-spacing: 0.02em;
     color: var(--main-text-color);
-
-
     transition: color var(--cubic);
 
     &:hover,
@@ -241,7 +236,6 @@
     font-size: 34px;
     line-height: 1.18;
     letter-spacing: 0.02em;
-
     color: var(--accent-color);
 }
 
