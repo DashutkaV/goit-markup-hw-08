@@ -5,7 +5,7 @@
 
     @media screen and (max-width: 767.99px) {
         flex-wrap: wrap;
-        margin-bottom: 40px;
+        margin-bottom: 25px;
     }
 
     @media screen and (min-width: 768px) and (max-width: 1199.99px) {
@@ -17,11 +17,6 @@
         justify-content: center;
         margin-bottom: 50px;
     }
-}
-
-.portfolio-filtres-item:not(:first-child) {
-    margin-left: 8px;
-    // margin-bottom: 15px;
 }
 
 .portfolio-filtres-btn {
@@ -38,27 +33,77 @@
     // display: inline;
     padding: 6px 22px;
     display: inline-block;
-    margin: 8px;
+    margin-right: 4px;
+    margin-left: 4px;
+    margin-top: 0;
+    margin-bottom: 15px;
 
+    @media screen and (min-width: 768px) {
+        // margin-left: 15px;
+        // margin-right: 15px;
+        margin-bottom: 0;
+    }
+}
+
+.portfolio-filtres-btn--active {
+    font-family: 'Roboto';
+    @include font (500, 16px, 1.62, 0.03em);
+    // font-weight: 500;
+    // font-size: 16px;
+    // line-height: 1.62;
+    // letter-spacing: 0.03em; 
+    max-width: 100%;   
+    background-color:  var(--accent-color);
+    color: var(--main-title-color);
+    cursor: pointer;
+    // display: inline;
+    padding: 6px 22px;
+    display: inline-block;
+    margin-right: 4px;
+    margin-left: 4px;
+    margin-top: 0;
+    margin-bottom: 15px;
 }
 
 .portfolio-list {
 
-
     @media screen and (min-width: 768px) {
         display: flex;
         flex-wrap: wrap;
+        gap: 15px;
+        margin: -15px;
+        padding-top: 15px;
+    }
+
+    @media screen and (min-width: 1200px) {
         gap: 30px;
+        padding-top: 0;
+        justify-content: center;
     }
 }
 
 .portfolio-item {
+    margin-bottom: 15px;
+    margin-top: 15px;
+
     @media screen and (min-width: 768px) {
-        flex-basis: calc((100% - 60px) / 2);
+        flex-basis: calc((100% - 60px) /2);
+        margin-left: 15px;
+        justify-content: center;
     }
 
     @media screen and (min-width: 1200px) {
-        flex-basis: calc((100% - 60px) /3);
+        flex-basis: calc((100% - 90px) /3);
+        margin-left: 0;
+    }
+}
+
+.portfolio-item:last-child {
+    margin-bottom: 0;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 15px;
+    
     }
 }
 
@@ -66,14 +111,22 @@
     display: block;
     transition: box-shadow var(--cubic);
 
+
+
     &:hover, &:focus {
         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     }
+
+
 }
 
 .portfolio-meta {
     position: relative;
     overflow: hidden;
+}
+
+.portfolio-img {
+    max-width: 100%;
 }
 
 .portfolio-actions {
@@ -100,7 +153,10 @@
 
 .portfolio-description {
     padding: 20px 24px;
-    border: 1px solid rgba(238, 238, 238, 1)
+    border: 1px solid rgba(238, 238, 238, 1);
+    // margin-bottom: 15px;
+
+
 }
 
 .portfolio-title {

@@ -26,7 +26,7 @@
     letter-spacing: 0.02em;
     color: var(--main-color-title);
     position: relative;
-    transition: color var(--transition-duration) var(--transition-timing);
+    transition: color var(--cubic);
     
     &--active {
         color: var(--accent-color);
@@ -125,7 +125,7 @@
         letter-spacing: 0.02em;
         color: var(--main-color-title);
         position: relative;
-        transition: color var(--transition-duration) var(--transition-timing);
+        transition: color var(--cubic);
 
         &:hover,
         &:focus {
@@ -201,7 +201,7 @@
         letter-spacing: 0.02em;
         color: var(--main-text-color);
     
-        transition: color var(--transition-duration) var(--transition-timing);
+        transition: color var(--cubic);
     
         &:hover,
         &:focus {
@@ -228,7 +228,7 @@
     color: var(--main-text-color);
 
 
-    transition: color var(--transition-duration) var(--transition-timing);
+    transition: color var(--cubic);
 
     &:hover,
     &:focus {

@@ -166,7 +166,7 @@
                 <h1 class="visually-hidden">Портфолио</h1>
                 <ul class="portfolio-filtres">
                     <li class="portfolio-filtres-item">
-                        <button type="button" class="portfolio-filtres-btn btn">Все</button>
+                        <button type="button" class="portfolio-filtres-btn--active btn">Все</button>
                     </li>
                     <li class="portfolio-filtres-item">
                         <button type="button" class="portfolio-filtres-btn btn activate">Веб-сайты</button>
@@ -185,10 +185,34 @@
                     <li class="portfolio-item">
                         <a class="portfolio-content" href="">
                             <div class="portfolio-meta">
-                                <img src="./images/Portfolio.jpg" 
-                                    alt="Технокряк" 
-                                    width="370" 
-                                    class="portfolio-img">
+                                <picture>
+                                    <source
+                                        srcset="
+                                            ./images/Portfolio.jpg    1x,
+                                            ./images/Portfolio-2x.jpg 2x
+                                        "
+                                        media="(min-width:1200px)"
+                                    />
+                                    <source
+                                        srcset="
+                                            ./images/Portfolio-tab.jpg    1x,
+                                            ./images/Portfolio-tab-2x.jpg 2x
+                                        "
+                                        media="(min-width:768px)"
+                                    />
+                                    <source
+                                        srcset="
+                                            ./images/Portfolio-mob.jpg    1x,
+                                            ./images/Portfolio-mob-2x.jpg 2x
+                                        "
+                                        media="(max-width:767px)"
+                                    />
+                                    <img
+                                        src="./images/Portfolio.jpg"
+                                        alt="Технокряк"
+                                        class="portfolio-img"
+                                    />
+                                </picture>
                                 <p class="portfolio-actions">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                             </div>
                             <div class="portfolio-description">
@@ -200,10 +224,34 @@
                     <li class="portfolio-item">
                         <a class="portfolio-content" href="">
                             <div class="portfolio-meta">
-                                <img src="./images/Portfolio1.jpg" 
-                                    alt="Постер New Orlean vs Golden Star" 
-                                    width="370" 
-                                    class="portfolio-img">
+                                <picture>
+                                    <source
+                                        srcset="
+                                            ./images/Portfolio1.jpg    1x,
+                                            ./images/Portfolio1-2x.jpg 2x
+                                        "
+                                        media="(min-width:1200px)"
+                                    />
+                                    <source
+                                        srcset="
+                                            ./images/Portfolio1-tab.jpg    1x,
+                                            ./images/Portfolio1-tab-2x.jpg 2x
+                                        "
+                                        media="(min-width:768px)"
+                                    />
+                                    <source
+                                        srcset="
+                                            ./images/Portfolio1-mob.jpg    1x,
+                                            ./images/Portfolio1-mob-2x.jpg 2x
+                                        "
+                                        media="(max-width:767px)"
+                                    />
+                                    <img
+                                        src="./images/Portfolio1.jpg"
+                                        alt="Постер New Orlean vs Golden Star"
+                                        class="portfolio-img"
+                                    />
+                                </picture>
                                 <p class="portfolio-actions">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                             </div>
                             <div class="portfolio-description">
@@ -215,10 +263,34 @@
                     <li class="portfolio-item">
                         <a class="portfolio-content" href="">
                             <div class="portfolio-meta">
-                                <img src="./images/Portfolio2.jpg" 
-                                    alt="Ресторан Seafood" 
-                                    width="370" 
-                                    class="portfolio-img">
+                                <picture>
+                                    <source
+                                        srcset="
+                                            ./images/Portfolio2.jpg    1x,
+                                            ./images/Portfolio2-2x.jpg 2x
+                                        "
+                                        media="(min-width:1200px)"
+                                    />
+                                    <source
+                                        srcset="
+                                            ./images/Portfolio2-tab.jpg    1x,
+                                            ./images/Portfolio2-tab-2x.jpg 2x
+                                        "
+                                        media="(min-width:768px)"
+                                    />
+                                    <source
+                                        srcset="
+                                            ./images/Portfolio2-mob.jpg    1x,
+                                            ./images/Portfolio2-mob-2x.jpg 2x
+                                        "
+                                        media="(max-width:767px)"
+                                    />
+                                    <img
+                                        src="./images/Portfolio2.jpg"
+                                        alt="Ресторан Seafood"
+                                        class="portfolio-img"
+                                    />
+                                </picture>
                                 <p class="portfolio-actions">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                             </div>
                             <div class="portfolio-description">
@@ -230,10 +302,34 @@
                     <li class="portfolio-item">
                         <a class="portfolio-content" href="">
                             <div class="portfolio-meta">
-                                <img src="./images/Portfolio3.jpg" 
-                                    alt="Проект Prime" 
-                                    width="370" 
-                                    class="portfolio-img">
+                                <picture>
+                                    <source
+                                        srcset="
+                                            ./images/Portfolio3.jpg    1x,
+                                            ./images/Portfolio3-2x.jpg 2x
+                                        "
+                                        media="(min-width:1200px)"
+                                    />
+                                    <source
+                                        srcset="
+                                            ./images/Portfolio3-tab.jpg    1x,
+                                            ./images/Portfolio3-tab-2x.jpg 2x
+                                        "
+                                        media="(min-width:768px)"
+                                    />
+                                    <source
+                                        srcset="
+                                            ./images/Portfolio3-mob.jpg    1x,
+                                            ./images/Portfolio3-mob-2x.jpg 2x
+                                        "
+                                        media="(max-width:767px)"
+                                    />
+                                    <img
+                                        src="./images/Portfolio3.jpg"
+                                        alt="Проект Prime"
+                                        class="portfolio-img"
+                                    />
+                                </picture>
                                 <p class="portfolio-actions">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                             </div>
                             <div class="portfolio-description">
@@ -245,10 +341,34 @@
                     <li class="portfolio-item">
                         <a class="portfolio-content" href="">
                             <div class="portfolio-meta">
-                                <img src="./images/Portfolio4.jpg" 
-                                    alt="Проект Boxes" 
-                                    width="370" 
-                                    class="portfolio-img">
+                                <picture>
+                                    <source
+                                        srcset="
+                                            ./images/Portfolio4.jpg    1x,
+                                            ./images/Portfolio4-2x.jpg 2x
+                                        "
+                                        media="(min-width:1200px)"
+                                    />
+                                    <source
+                                        srcset="
+                                            ./images/Portfolio4-tab.jpg    1x,
+                                            ./images/Portfolio4-tab-2x.jpg 2x
+                                        "
+                                        media="(min-width:768px)"
+                                    />
+                                    <source
+                                        srcset="
+                                            ./images/Portfolio4-mob.jpg    1x,
+                                            ./images/Portfolio4-mob-2x.jpg 2x
+                                        "
+                                        media="(max-width:767px)"
+                                    />
+                                    <img
+                                        src="./images/Portfolio4.jpg"
+                                        alt="Проект Boxes"
+                                        class="portfolio-img"
+                                    />
+                                </picture>
                                 <p class="portfolio-actions">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                             </div>
                             <div class="portfolio-description">
@@ -260,10 +380,34 @@
                     <li class="portfolio-item">
                         <a class="portfolio-content" href="">
                             <div class="portfolio-meta">
-                                <img src="./images/Portfolio5.jpg" 
-                                    alt="Inspiration has no Borders" 
-                                    width="370" 
-                                    class="portfolio-img">
+                                <picture>
+                                    <source
+                                        srcset="
+                                            ./images/Portfolio5.jpg    1x,
+                                            ./images/Portfolio5-2x.jpg 2x
+                                        "
+                                        media="(min-width:1200px)"
+                                    />
+                                    <source
+                                        srcset="
+                                            ./images/Portfolio5-tab.jpg    1x,
+                                            ./images/Portfolio5-tab-2x.jpg 2x
+                                        "
+                                        media="(min-width:768px)"
+                                    />
+                                    <source
+                                        srcset="
+                                            ./images/Portfolio5-mob.jpg    1x,
+                                            ./images/Portfolio5-mob-2x.jpg 2x
+                                        "
+                                        media="(max-width:767px)"
+                                    />
+                                    <img
+                                        src="./images/Portfolio5.jpg"
+                                        alt="Inspiration has no Borders"
+                                        class="portfolio-img"
+                                    />
+                                </picture>
                                 <p class="portfolio-actions">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                             </div>
                             <div class="portfolio-description">
@@ -275,10 +419,34 @@
                     <li class="portfolio-item">
                         <a class="portfolio-content" href="">
                             <div class="portfolio-meta">
-                                <img src="./images/Portfolio6.jpg" 
-                                    alt="Издание Limited Edition" 
-                                    width="370" 
-                                    class="portfolio-img">
+                                <picture>
+                                    <source
+                                        srcset="
+                                            ./images/Portfolio6.jpg    1x,
+                                            ./images/Portfolio6-2x.jpg 2x
+                                        "
+                                        media="(min-width:1200px)"
+                                    />
+                                    <source
+                                        srcset="
+                                            ./images/Portfolio6-tab.jpg    1x,
+                                            ./images/Portfolio6-tab-2x.jpg 2x
+                                        "
+                                        media="(min-width:768px)"
+                                    />
+                                    <source
+                                        srcset="
+                                            ./images/Portfolio6-mob.jpg    1x,
+                                            ./images/Portfolio6-mob-2x.jpg 2x
+                                        "
+                                        media="(max-width:767px)"
+                                    />
+                                    <img
+                                        src="./images/Portfolio6.jpg"
+                                        alt="Издание Limited Edition"
+                                        class="portfolio-img"
+                                    />
+                                </picture>
                                 <p class="portfolio-actions">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                             </div>
                             <div class="portfolio-description">
@@ -290,10 +458,34 @@
                     <li class="portfolio-item">
                         <a class="portfolio-content" href="">
                             <div class="portfolio-meta">
-                                <img src="./images/Portfolio7.jpg" 
-                                    alt="Проект LAB" 
-                                    width="370" 
-                                    class="portfolio-img">
+                                <picture>
+                                    <source
+                                        srcset="
+                                            ./images/Portfolio7.jpg    1x,
+                                            ./images/Portfolio7-2x.jpg 2x
+                                        "
+                                        media="(min-width:1200px)"
+                                    />
+                                    <source
+                                        srcset="
+                                            ./images/Portfolio7-tab.jpg    1x,
+                                            ./images/Portfolio7-tab-2x.jpg 2x
+                                        "
+                                        media="(min-width:768px)"
+                                    />
+                                    <source
+                                        srcset="
+                                            ./images/Portfolio7-mob.jpg    1x,
+                                            ./images/Portfolio7-mob-2x.jpg 2x
+                                        "
+                                        media="(max-width:767px)"
+                                    />
+                                    <img
+                                        src="./images/Portfolio7.jpg"
+                                        alt="Проект LAB"
+                                        class="portfolio-img"
+                                    />
+                                </picture>
                                 <p class="portfolio-actions">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                             </div>
                             <div class="portfolio-description">
@@ -305,10 +497,34 @@
                     <li class="portfolio-item">
                         <a class="portfolio-content" href="">
                             <div class="portfolio-meta">
-                                <img src="./images/Portfolio8.jpg" 
-                                    alt="Growing Business" 
-                                    width="370" 
-                                    class="portfolio-img">
+                                <picture>
+                                    <source
+                                        srcset="
+                                            ./images/Portfolio8.jpg    1x,
+                                            ./images/Portfolio8-2x.jpg 2x
+                                        "
+                                        media="(min-width:1200px)"
+                                    />
+                                    <source
+                                        srcset="
+                                            ./images/Portfolio8-tab.jpg    1x,
+                                            ./images/Portfolio8-tab-2x.jpg 2x
+                                        "
+                                        media="(min-width:768px)"
+                                    />
+                                    <source
+                                        srcset="
+                                            ./images/Portfolio8-mob.jpg    1x,
+                                            ./images/Portfolio8-mob-2x.jpg 2x
+                                        "
+                                        media="(max-width:767px)"
+                                    />
+                                    <img
+                                        src="./images/Portfolio8.jpg"
+                                        alt="Growing Business"
+                                        class="portfolio-img"
+                                    />
+                                </picture>
                                 <p class="portfolio-actions">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                             </div>
                             <div class="portfolio-description">
@@ -321,69 +537,71 @@
             </div>
         </section>
     </main>
-    <!-- <footer class="footer">
+    <footer class="footer">
         <div class="container contacts">
-            <div class="column-address">
-                <a class="logo" href="">Web<span class="logo__light">Studio</span>
-                </a>
-                <address class="address-contact">
-                    <ul class="address">
-                        <li class="address__item">
-                            <a class="address__address-link"
-                            href="https://goo.gl/maps/QefCWzyqJZrkM8jZ6" 
-                            target="_blank" 
-                            rel="noopener noindex nofollow">
-                            г. Киев, пр-т Леси Украинки, 26</a>
+            <div class="container-tablet">
+                <div class="column-address">
+                    <a class="logo" href="">Web<span class="logo__light">Studio</span>
+                    </a>
+                    <address class="address-contact">
+                        <ul class="address">
+                            <li class="address__item">
+                                <a class="address__address-link"
+                                href="https://goo.gl/maps/QefCWzyqJZrkM8jZ6" 
+                                target="_blank" 
+                                rel="noopener noindex nofollow">
+                                г. Киев, пр-т Леси Украинки, 26</a>
+                            </li>
+                            <li class="address__item">
+                                <a class="address__link"
+                                href="mailto:info@example.com" 
+                                >info@example.com</a>
+                            </li>
+                            <li class="address__item">
+                                <a class="address__link"
+                                href="tel:+380991111111" 
+                                >+38 099 111 11 11</a>
+                            </li>
+                        </ul>
+                    </address>
+                </div>
+                <div class="column-soc">
+                    <h2 class="column-soc__title">присоединяйтесь</h2>
+                    <ul class="soc-list">
+                        <li class="soc-list__item">
+                            <a class="soc-list__link" href="">
+                                <svg class="contacts-soc-icon" width="20" height="20">
+                                    <use href="./images/symbol-defs.svg#icon-instagram">
+                                    </use>
+                                </svg>
+                            </a>
                         </li>
-                        <li class="address__item">
-                            <a class="address__link"
-                            href="mailto:info@example.com" 
-                            >info@example.com</a>
+                        <li class="soc-list__item">
+                            <a class="soc-list__link" href="">
+                                <svg class="contacts-soc-icon" width="20" height="20">
+                                    <use href="./images/symbol-defs.svg#icon-twitter">
+                                    </use>
+                                </svg>
+                            </a>
                         </li>
-                        <li class="address__item">
-                            <a class="address__link"
-                            href="tel:+380991111111" 
-                            >+38 099 111 11 11</a>
+                        <li class="soc-list__item">
+                            <a class="soc-list__link" href="">
+                                <svg class="contacts-soc-icon" width="20" height="20">
+                                    <use href="./images/symbol-defs.svg#icon-facebook">
+                                    </use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="soc-list__item">
+                            <a class="soc-list__link" href="">
+                                <svg class="contacts-soc-icon" width="20" height="20">
+                                    <use href="./images/symbol-defs.svg#icon-linkedin">
+                                    </use>
+                                </svg>
+                            </a>
                         </li>
                     </ul>
-                </address>
-            </div>
-            <div class="column-soc">
-                <h2 class="column-soc__title">присоединяйтесь</h2>
-                <ul class="soc-list">
-                    <li class="soc-list__item">
-                        <a class="soc-list__link" href="">
-                            <svg class="contacts-soc-icon" width="20" height="20">
-                                <use href="./images/symbol-defs.svg#icon-instagram">
-                                </use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="soc-list__item">
-                        <a class="soc-list__link" href="">
-                            <svg class="contacts-soc-icon" width="20" height="20">
-                                <use href="./images/symbol-defs.svg#icon-twitter">
-                                </use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="soc-list__item">
-                        <a class="soc-list__link" href="">
-                            <svg class="contacts-soc-icon" width="20" height="20">
-                                <use href="./images/symbol-defs.svg#icon-facebook">
-                                </use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="soc-list__item">
-                        <a class="soc-list__link" href="">
-                            <svg class="contacts-soc-icon" width="20" height="20">
-                                <use href="./images/symbol-defs.svg#icon-linkedin">
-                                </use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
+                </div>
             </div>
             <div class="online">
                 <h2 class="column-soc__title">подпишитесь на рассылку</h2>
@@ -409,6 +627,6 @@
                 </form>
             </div>
         </div>
-    </footer> -->
+    </footer>
 </body>
 </html>

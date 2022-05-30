@@ -7,6 +7,14 @@
     letter-spacing: 0.03em;
     color: var(--accent-color);
 
+
+
+
+}
+
+.logo__dark {
+    color: black;
+
     @media screen and (min-width: 768px) {
         margin-right: 88px;
     }
@@ -14,10 +22,6 @@
     @media screen and (min-width: 1200px) {
         margin-right: 93px;
     }
-}
-
-.logo__dark {
-    color: black;
 }
 
 .logo__light {
