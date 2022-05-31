@@ -1,23 +1,20 @@
 .features {
+    
     @media screen and (min-width: 768px) {
         display: flex;
         flex-wrap: wrap;
-        margin-top: -15px;
+        margin: -15px;
     }
 }
 
-.features__item{
- // max-width: 270px;
-// .features__item:not(:last-child) {
-//     margin-right: 30px;
-// }
+.features__item {
+
     &:not(:last-child) {
 
         @media screen and (max-width: 767px) {
         margin-bottom: 30px;
         }
     }
-
     
     @media screen and (min-width: 768px) {
         margin: 15px;
@@ -32,7 +29,6 @@
 .features__content{
     margin-bottom: 30px;
     height: 120px;
-
     @extend %align-list;
     justify-content: center;
     background: #F5F4FA;

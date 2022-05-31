@@ -4,7 +4,7 @@
 
     @media screen and (max-width: 767.99px) {
         flex-wrap: wrap;
-        margin-bottom: 25px;
+        margin-bottom: 40px;
     }
 
     @media screen and (min-width: 768px) and (max-width: 1199.99px) {
@@ -18,6 +18,17 @@
     }
 }
 
+.portfolio-filtres-item {
+    margin-right: 4px;
+    margin-left: 4px;
+    margin-top: 0;
+    margin-bottom: 15px;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 0;
+    }
+}
+
 .portfolio-filtres-btn {
     font-family: 'Roboto';
     @include font (500, 16px, 1.62, 0.03em);
@@ -28,18 +39,8 @@
     max-width: 100%;   
     background-color: #F5F4FA;
     color: var(--header-color);
-    // cursor: pointer;
-    // display: inline;
     padding: 6px 22px;
     display: inline-block;
-    margin-right: 4px;
-    margin-left: 4px;
-    margin-top: 0;
-    margin-bottom: 15px;
-
-    @media screen and (min-width: 768px) {
-        margin-bottom: 0;
-    }
 }
 
 .portfolio-filtres-btn--active {
@@ -52,14 +53,8 @@
     max-width: 100%;   
     background-color:  var(--accent-color);
     color: var(--main-title-color);
-    // cursor: pointer;
-    // display: inline;
     padding: 6px 22px;
     display: inline-block;
-    margin-right: 4px;
-    margin-left: 4px;
-    margin-top: 0;
-    margin-bottom: 15px;
 }
 
 .portfolio-list {
@@ -67,25 +62,24 @@
     @media screen and (min-width: 768px) {
         display: flex;
         flex-wrap: wrap;
-        gap: 15px;
-        margin: -15px;
-        padding-top: 15px;
+        gap: 30px;
     }
 
     @media screen and (min-width: 1200px) {
-        gap: 30px;
-        padding-top: 0;
         justify-content: center;
     }
 }
 
 .portfolio-item {
-    margin-bottom: 15px;
-    margin-top: 15px;
+
+    @media screen and (max-width: 767px) {
+        &:not(:last-child){
+            margin-bottom: 30px;
+        }
+    }
 
     @media screen and (min-width: 768px) {
-        flex-basis: calc((100% - 60px) /2);
-        margin-left: 15px;
+        flex-basis: calc((100% - 30px) /2);
         justify-content: center;
     }
 
@@ -97,11 +91,6 @@
 
 .portfolio-item:last-child {
     margin-bottom: 0;
-
-    @media screen and (min-width: 768px) {
-        margin-bottom: 15px;
-    
-    }
 }
 
 .portfolio-content {
@@ -110,6 +99,12 @@
 
     &:hover, &:focus {
         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    }
+    
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
     }
 }
 
@@ -148,6 +143,10 @@
 .portfolio-description {
     padding: 20px 24px;
     border: 1px solid rgba(238, 238, 238, 1);
+
+    @media screen and (min-width: 768px) {
+        flex-grow: 1;
+    }
 }
 
 .portfolio-title {

@@ -3,14 +3,12 @@
 
     @media screen and (min-width: 1200px) {
         display: flex;
-        // justify-content: center;
         padding-top: 0;
     }
 }
 
 .work {
         display: flex;
-        // justify-content: center;
         
     &__item {
         width: calc((100% - 60px) / 3);

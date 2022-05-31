@@ -21,31 +21,25 @@
 }
 
 .container-tablet {
+    margin-bottom: 60px;
 
     @media screen and (min-width: 768px) {
         display: flex;
         justify-content: space-around;
-        // align-items: baseline;
         flex-grow: 1;
-        margin-bottom: 60px;
     }
 
     @media screen and (min-width: 1200px) {
         flex-grow: 0;
-        margin-bottom: 0;
+        margin-right: 90px;
     }
 }
 
 .column-address {
 
-    @media screen and (min-width: 768px) {
-        margin-left: auto;
-        margin-right: auto;
-    }
-
     @media screen and (min-width: 1200px) {
         flex-grow: 1;
-
+        margin-right: 70px;
     }
 }
 
@@ -94,23 +88,25 @@
 
 .online {
 
-    @media screen and (min-width: 768px) {
-        width: 450px;
+    @media screen and (min-width: 768px) {  
         margin-right: auto;
         margin-left: auto;
     }
 
     @media screen and (min-width: 1200px) {
-        width: 450px;
-        margin-left: 0;
         
-
+        margin-left: 0;
+        margin-right: 0;
     }
 }
 
 
 .column-soc {
-    margin: 60px auto;
+    margin-top: 60px;
+
+    @media screen and (min-width: 768px) {  
+        margin-top: 0;
+    }
 
     &__title {
         @include font (null, 14px, 1.14, 0.03em);
@@ -122,19 +118,6 @@
         color: var(--main-title-color);
         margin-bottom: 20px;
     }
-
-    @media screen and (min-width: 768px) {
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 5px;
-    }
-
-    @media screen and (min-width: 1200px) {
-        margin-left: 55px;
-        margin-right: 93px;
-        margin-top: 12px;
-    }
-
 }
 
 .soc-list {
@@ -199,6 +182,7 @@
         }
 
         @media screen and (min-width: 1200px) {
+            margin-bottom: 0;
             width: 358px;
             }
     }   

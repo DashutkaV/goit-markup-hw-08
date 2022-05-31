@@ -75,11 +75,13 @@
 
     @media screen and (max-width: 767px) {
         display: none;
+        margin-left: 88px;
     }
 
     @media screen and (min-width: 768px) {
         display: flex;
         align-items: center;
+        margin-left: 93px;
     }
 }
 
@@ -97,6 +99,7 @@
     @media screen and (min-width: 768px) {
         margin-left: 88px;
     }
+    
     @media screen and (min-width: 1200px) {
         margin-left: 93px;
     }
@@ -199,7 +202,7 @@
         font-size: 12px;
         line-height: 1.17;
         letter-spacing: 0.02em;
-        color: var(--main-text-color);    
+        color: var(--text-color);    
         transition: color var(--cubic);
     
         &:hover,
@@ -222,7 +225,7 @@
     font-size: 24px;
     line-height: 1.17;
     letter-spacing: 0.02em;
-    color: var(--main-text-color);
+    color: var(--text-color);
     transition: color var(--cubic);
 
     &:hover,
